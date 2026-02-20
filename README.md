@@ -6,13 +6,13 @@ DiagnosAI is an intelligent, user-friendly web application designed to assist us
 
 ##  Features
 
-- **Interactive Symptom Survey** — Guided questionnaire to collect user symptoms in a structured way.
-- **AI-Powered Analysis** — Processes user input to generate possible conditions and insights.
-- **Real-Time Results Screen** — Displays potential diagnoses with a clean, understandable UI.
-- **Modern UI/UX** — Built with a responsive, visually appealing interface using Tailwind and component libraries.
-- **Loading & Transition States** — Smooth transitions between survey, processing, and results.
+- **Interactive Symptom Survey:** Guided questionnaire to collect user symptoms in a structured way.
+- **AI-Powered Analysis:** Processes user input to generate possible conditions and insights.
+- **Real-Time Results Screen:** Displays potential diagnoses with a clean, understandable UI.
+- **Modern UI/UX:** Built with a responsive, visually appealing interface using Tailwind and component libraries.
+- **Loading & Transition States:** Smooth transitions between survey, processing, and results.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React + TypeScript (Vite)
 - **Styling:** Tailwind CSS
@@ -31,7 +31,7 @@ src/
 │   ├── SurveyScreen.tsx      # Symptom input flow
 │   ├── LoadingScreen.tsx     # Processing state
 │   ├── ResultsScreen.tsx     # Diagnosis output
-│   └── ui/                   # Reusable UI components
+│   └── ui/                   # Library components
 ├── App.tsx
 └── main.tsx
 ```
