@@ -2,9 +2,9 @@
 
 DiagnosAI is an intelligent, user-friendly web application designed to assist users in identifying potential health conditions based on symptoms. By combining guided surveys with AI-driven analysis, the platform provides quick, accessible, and informative health insights.
 
-⚠️ **Disclaimer:** DiagnosAI is not a replacement for professional medical advice, diagnosis, or treatment.
+ **Disclaimer:** DiagnosAI is not a replacement for professional medical advice, diagnosis, or treatment.
 
-## 🚀 Features
+##  Features
 
 - **Interactive Symptom Survey** — Guided questionnaire to collect user symptoms in a structured way.
 - **AI-Powered Analysis** — Processes user input to generate possible conditions and insights.
@@ -22,7 +22,7 @@ DiagnosAI is an intelligent, user-friendly web application designed to assist us
 - **Animations:** Framer Motion
 - **Validation:** Zod + React Hook Form
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -37,7 +37,7 @@ src/
 ```
 
 
-## 🧠 How It Works
+##  How It Works
 
 1. User enters symptoms through a guided survey
 2. Data is processed (locally or via backend/AI logic)
@@ -52,7 +52,7 @@ src/
 - Wearable / sensor integration
 - Doctor-facing dashboard
 
-## 👥 Contributors
+##  Contributors
 
 Program:
 Mohammad A.
