@@ -56,6 +56,25 @@ const IntroScreen = ({ onSubmit, error }: IntroScreenProps) => {
         </div>
       </form>
 
+      <div className="flex flex-wrap justify-center gap-2 mt-4">
+        {[
+          "My vision is blurry",
+          "My teeth hurt",
+          "I have a headache",
+          "My back is sore",
+          "I feel short of breath",
+        ].map((suggestion) => (
+          <button
+            key={suggestion}
+            type="button"
+            onClick={() => onSubmit(suggestion)}
+            className="px-4 py-2 rounded-full border border-border bg-card text-muted-foreground text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+          >
+            {suggestion}
+          </button>
+        ))}
+      </div>
+
       {error && (
         <p className="mt-4 text-destructive text-sm text-center">{error}</p>
       )}
