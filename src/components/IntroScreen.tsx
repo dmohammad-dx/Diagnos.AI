@@ -28,13 +28,13 @@ const IntroScreen = ({ onSubmit, error }: IntroScreenProps) => {
           <span className="text-primary-foreground text-xl font-display font-bold">+</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-display font-bold text-foreground">
-          MediScan
+          Diagnos is here to help...
         </h1>
       </div>
 
       <p className="text-muted-foreground text-center text-base sm:text-lg mt-4 mb-8 max-w-lg leading-relaxed">
-        Describe how you're feeling and we'll guide you through a quick assessment
-        to help identify possible conditions and next steps.
+        Just take your time to describe how you're feeling right now, 
+        and we'll get you the advice you need.
       </p>
 
       <form onSubmit={handleSubmit} className="w-full">
