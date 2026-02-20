@@ -1,1 +1,7 @@
 project_id = "ypttrktnskpptoqlmgrs"
+
+[functions.diagnose-survey]
+verify_jwt = false
+
+[functions.diagnose-results]
+verify_jwt = false
