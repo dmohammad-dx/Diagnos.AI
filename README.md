@@ -36,37 +36,6 @@ src/
 └── main.tsx
 ```
 
-## ⚙️ Installation & Setup
-
-### Clone the repository
-
-```bash
-git clone <your-repo-url>
-cd diagnosaiWeb
-```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Set up environment variables
-
-Create a `.env` file and configure your Supabase credentials:
-
-```
-VITE_SUPABASE_URL=your_url
-VITE_SUPABASE_ANON_KEY=your_key
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-Open in browser: `http://localhost:5173`
 
 ## 🧠 How It Works
 
@@ -74,33 +43,6 @@ Open in browser: `http://localhost:5173`
 2. Data is processed (locally or via backend/AI logic)
 3. The system evaluates possible conditions
 4. Results are displayed with relevant insights
-
-## 🧪 Testing
-
-Run tests using:
-
-```bash
-npm run test
-```
-
-## 📦 Build
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-Preview it locally:
-
-```bash
-npm run preview
-```
-
-## 🔒 Disclaimer
-
-- DiagnosAI is intended for educational and informational purposes only.
-- It does not provide medical advice and should not be used as a substitute for consultation with a qualified healthcare professional.
 
 ## 🌱 Future Improvements
 
@@ -112,4 +54,10 @@ npm run preview
 
 ## 👥 Contributors
 
-Your Team Name / Members
+Program:
+Mohammad A.
+Ahmad F.
+
+Pitch and Presentation:
+Amaira B.
+Po Po T.
