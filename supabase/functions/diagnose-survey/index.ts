@@ -13,13 +13,26 @@ serve(async (req) => {
     const { symptom } = await req.json();
     if (!symptom) throw new Error("No symptom provided");
 
+    const AI_GATEWAY_URL = Deno.env.get("AI_GATEWAY_URL");
+    const AI_API_KEY = Deno.env.get("AI_API_KEY");
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
-    if (!LOVABLE_API_KEY) throw new Error("LOVABLE_API_KEY is not configured");
 
-    const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+    // Determine gateway and auth. Priority:
+    // 1) AI_GATEWAY_URL + AI_API_KEY
+    // 2) AI_GATEWAY_URL without key
+    // 3) Lovable gateway via LOVABLE_API_KEY (backwards compatible)
+    let gatewayUrl = AI_GATEWAY_URL;
+    let authHeader: string | undefined = AI_API_KEY ? `Bearer ${AI_API_KEY}` : undefined;
+    if (!gatewayUrl && LOVABLE_API_KEY) {
+      gatewayUrl = "https://ai.gateway.lovable.dev/v1/chat/completions";
+      authHeader = `Bearer ${LOVABLE_API_KEY}`;
+    }
+    if (!gatewayUrl) throw new Error("AI_GATEWAY_URL or LOVABLE_API_KEY must be configured");
+
+    const response = await fetch(gatewayUrl, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${LOVABLE_API_KEY}`,
+        ...(authHeader ? { Authorization: authHeader } : {}),
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
