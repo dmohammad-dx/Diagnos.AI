@@ -14,10 +14,29 @@
     <link rel="icon" href="diagnosLogo.png">
 
 
+    <style>
+
+      .top-center-container {
+      display: flex;
+      justify-content: center; /* Centers horizontally */
+      align-items: flex-start; /* Aligns to the top */
+      width: 100%;             /* Spans full screen width */
+      height: 100vh;           /* (Optional) Sets container to full viewport height */
+      }
+
+    </style>
+
   </head>
 
   <body>
     <div id="root"></div>
+
+    <div class="container">
+      <img src="diagnosLogo.png" alt="Logo">
+    </div>
+
+
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
